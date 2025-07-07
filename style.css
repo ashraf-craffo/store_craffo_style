@@ -1,4 +1,5 @@
-body
-{
-    background: red;
+section.s-block.s-block--fixed-banner.wide-placeholder, section.s-block.s-block--fixed-banner.wide-placeholder * {
+    padding: unset !important;
+    max-width: unset !important;
+    margin: unset;
 }
