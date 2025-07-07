@@ -12,3 +12,7 @@ div#mainnav * {
     color: #ffff !important;
     border: unset;
 }
+
+.top-navbar {
+    display: none;
+}
