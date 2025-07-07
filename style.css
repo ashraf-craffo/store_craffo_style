@@ -3,3 +3,12 @@ section.s-block.s-block--fixed-banner.wide-placeholder, section.s-block.s-block-
     max-width: unset !important;
     margin: unset;
 }
+
+div#mainnav {
+    background: #1952ea !important;
+}
+
+div#mainnav * {
+    color: #ffff !important;
+    border: unset;
+}
