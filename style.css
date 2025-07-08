@@ -16,3 +16,7 @@ div#mainnav * {
 .top-navbar {
     display: none;
 }
+
+.s-product-card-image img.loaded {
+    background: #fff;
+}
