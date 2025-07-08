@@ -25,3 +25,10 @@ div#mainnav * {
 .s-product-card-entry {
     border: 1px solid #ccc;
 }
+
+
+.s-button-primary-outline {
+    background: #1952ea;
+    border: unset;
+    color: #fff;
+}
