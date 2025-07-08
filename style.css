@@ -38,3 +38,125 @@ div#mainnav * {
     color: #1952ea;
     background: #ffffff;
 }
+
+
+.s-block--features {
+  padding: 4rem 1rem;
+  border-radius: 16px;
+  margin: 3rem auto;
+  max-width: 1300px;
+  background: #f9fafb;
+  position: relative;
+}
+
+.s-block--features__item {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(67, 97, 238, 0.1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.s-block--features__item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(67, 97, 238, 0.15);
+  border-color: rgba(67, 97, 238, 0.3);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+}
+
+/* شريط جانبي متحرك */
+.s-block--features__item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: linear-gradient(to bottom, #4361ee, #3a0ca3);
+  transition: height 0.4s ease-out;
+  z-index: -1;
+}
+
+.s-block--features__item:hover::after {
+  height: 100%;
+}
+
+/* الأيقونات */
+.feature-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1.8rem;
+  transition: all 0.4s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+  color: white !important;
+}
+
+.s-block--features__item:hover .feature-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 15px 30px rgba(67, 97, 238, 0.3);
+  background: linear-gradient(135deg, #3a0ca3 0%, #4361ee 100%);
+}
+
+/* النصوص */
+.s-block--features__item h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.s-block--features__item p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* تأثيرات إضافية للبطاقات */
+.s-block--features__item:nth-child(odd) {
+  transform: rotate(1deg);
+}
+
+.s-block--features__item:nth-child(even) {
+  transform: rotate(-1deg);
+}
+
+.s-block--features__item:hover {
+  transform: translateY(-8px) rotate(0deg) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-cols-\[repeat\(2\2c minmax\(0\2c 1fr\)\)\] {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  .s-block--features__item {
+    padding: 2rem 1.5rem;
+  }
+  
+  .s-block--features {
+    padding: 3rem 1rem;
+  }
+  
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2.5rem;
+  }
+  
+  .s-block--features__item:nth-child(n) {
+    transform: none !important;
+  }
+}
