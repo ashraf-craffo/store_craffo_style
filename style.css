@@ -20,3 +20,8 @@ div#mainnav * {
 .s-product-card-image img.loaded {
     background: #fff;
 }
+
+
+.s-product-card-entry {
+    border: 1px solid #ccc;
+}
