@@ -33,3 +33,8 @@ div#mainnav * {
     border: unset;
     color: #fff;
 }
+
+.s-block--tabs-produtcs .tab-trigger.is-active button {
+    color: #1952ea;
+    background: #ffffff;
+}
