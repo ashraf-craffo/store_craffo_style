@@ -3,13 +3,9 @@ section.s-block.s-block--fixed-banner.wide-placeholder:first-of-type * {
     padding: unset !important;
     max-width: unset !important;
     margin: unset;
-    background-color:#fff !important;
 }
 
-section.s-block.s-block--fixed-banner.wide-placeholder,
-section.s-block.s-block--fixed-banner.wide-placeholder * {
-    background-color:#fff !important;
-}
+
 
 div#mainnav {
     background: #1952ea !important;
