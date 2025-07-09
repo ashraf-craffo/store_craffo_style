@@ -6,6 +6,10 @@ section.s-block.s-block--fixed-banner.wide-placeholder:first-of-type * {
     background-color:#fff !important;
 }
 
+section.s-block.s-block--fixed-banner.wide-placeholder,
+section.s-block.s-block--fixed-banner.wide-placeholder * {
+    background-color:#fff !important;
+}
 
 div#mainnav {
     background: #1952ea !important;
