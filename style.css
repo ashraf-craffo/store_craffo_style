@@ -3,6 +3,7 @@ section.s-block.s-block--fixed-banner.wide-placeholder:first-of-type * {
     padding: unset !important;
     max-width: unset !important;
     margin: unset;
+    background-color:#fff !important;
 }
 
 
