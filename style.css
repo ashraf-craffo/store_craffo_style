@@ -5,7 +5,9 @@ section.s-block.s-block--fixed-banner.wide-placeholder:first-of-type * {
     margin: unset;
 }
 
-
+.s-block--tabs-produtcs {
+    margin-top: 0 !important;
+}
 
 div#mainnav {
     background: #1952ea !important;
